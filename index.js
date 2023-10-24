@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 const router = express.Router(); 
-const userRoutes = require ('./routes/User')
+const userRoutes = require ('./controllers/api/user-routes.js')
 
 
 app.use(userRoutes);

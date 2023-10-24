@@ -26,7 +26,6 @@ router.get('/', (req, res) => {
         ]
     })
         .then(dbPostData => {
-            // pass a single post object into the homepage template
             const posts = dbPostData.map(post => post.get({ plain: true }));
             res.render('homepage', {
                 posts,
@@ -88,10 +87,8 @@ router.get('/editpost/:id', (req, res) => {
                 return;
             }
 
-            // serialize the data
             const post = dbPostData.get({ plain: true });
 
-            // pass data to template
             res.render('edit-post', {
                 post,
                 dashboard: true,
@@ -135,7 +132,6 @@ router.get('/dashboard', (req, res) => {
         ]
     })
         .then(dbPostData => {
-            // serialize data before passing to template
             const posts = dbPostData.map(post => post.get({ plain: true }));
             console.log(posts);
             res.render('dashboard', {
@@ -182,10 +178,8 @@ router.get('/post/:id', (req, res) => {
                 return;
             }
 
-            // serialize the data
             const post = dbPostData.get({ plain: true });
 
-            // pass data to template
             res.render('single-post', {
                 post,
                 loggedIn: req.session.loggedIn
