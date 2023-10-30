@@ -27,13 +27,10 @@
 {{/if}}
 
 {{#each post.comments as |comment|}}
-<!-- COMMENT FORM -->
 <form>
-    <!-- COMMENT MESSAGE -->
     <div>
         <p>{{comment.comment_text}}</p>
     </div>
-    <!-- COMMENT FOOTER INFO -->
     <div class="post-header">
         <h4>- {{user.username}} on {{format_date created_at}}</h4>
     </div>
