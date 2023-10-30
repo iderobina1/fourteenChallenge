@@ -19,3 +19,11 @@ Run the server with node by runing command node server in your terminal.
 If you have not selected database, please use MYSQL and SOURCE the schema.
 ONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+- [Usage](#usage)
+  Run node server to run in localhost.
+
+- [Credits](#credits)
+  bootcamp by edx
+
+- [Documentation](#documentation)
