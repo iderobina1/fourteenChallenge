@@ -28,7 +28,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(session(sess));
 
-// turn on routes
 app.use(routes);
 
 app.engine('handlebars', hbs.engine);

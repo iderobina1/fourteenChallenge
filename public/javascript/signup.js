@@ -14,7 +14,6 @@ async function signupFormHandler(event) {
       headers: { 'Content-Type': 'application/json' }
     });
 
-    // check the response status
     if (response.ok) {
       const response = await fetch('/api/users/login', {
         method: 'post',
@@ -25,7 +24,6 @@ async function signupFormHandler(event) {
         headers: { 'Content-Type': 'application/json' }
       });
 
-      // check the response status
       if (response.ok) {
         document.location.replace('/dashboard');
       } else {
